@@ -1,0 +1,54 @@
+#navbar {
+	background-color:#4484CE;
+	position:sticky;
+}
+.nav-item > a {
+	font-size:20px;
+}
+
+.navbar-toggler {
+	margin-top:10px;
+}
+.content {
+	min-height:600px;
+}
+.row {
+	width:90%;
+	margin-left:5%;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+	min-height:200px;
+}
+
+
+.bilder > .col {
+	border: solid 0.5px black;
+}
+.carousel {
+	margin-top:50px;
+	width:80%;
+	margin-left:10%;
+}
+.navbar-brand {
+	font-size:30px;
+}
+.footer {
+	width:100%;
+	min-height:100px;
+	background-color:#4484CE;
+	margin-bottom:0px;
+}
+.footer > div
+ {
+	margin-left:5%;
+	padding-bottom:20px;
+}
+.footer > div > ul {
+	list-style-type:none;
+}
+.footer > div > ul > li{
+	font-size : 20px;
+	
+}
+
