@@ -18,6 +18,7 @@
 	       color: #777;
 				 margin: 0;
 				 padding: 0;
+				 margin-right: 0;
 
 	   }
 	   h3, h4 {
@@ -38,6 +39,7 @@
 
 	       width: 100%; /* Set width to 100% */
 	       margin: auto;
+
 	   }
 	   .carousel-caption h3 {
 	       color: #fffff !important;
@@ -48,10 +50,12 @@
 		 	margin-top:20px;
 
 		 }
-		 .navbar-brand{
+		 .navbar-brand {
 		 	font-size: 30px;
 			font-family: sans-serif;
 			font-weight: 400;
+
+
 		 }
 
 
@@ -67,13 +71,12 @@
 		 .navbar{
 		 	opacity: 0.9;
 			background-color: #00000;
-			border-bottom: solid 2px rgba(48, 25, 152, 0.91);
+			border-bottom: solid 2px red;
+
 
 
 		 }
-		 .menyItem{
-		 	color:rgb(24, 23, 24);
-		 }
+
 		 .col-sm-4 h1,p{
 		 	margin:20px;
 
@@ -83,6 +86,9 @@
 		 	margin:30px 0;
 			color:#000;
 			text-align: center;
+		 }
+		 .row{
+		 	margin-right:0;
 		 }
 
 		</style>
@@ -105,7 +111,7 @@
 		 </button>
 
 			<div class="navbar-brand">
-				Järlåsa <span style="font-weight:600">Måleri</span>
+				<span style="color:white">Järlåsa <span style="font-weight:600">Måleri</span> AB</span>
 			</div>
 		</div>
 
@@ -122,7 +128,7 @@
 
 
 
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div id="myCarousel" style="" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
 	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -134,7 +140,7 @@
 	  <div class="carousel-inner">
 
 	    <div class="item active">
-	      <img src="cat.jpg" alt="Kunde inte hitta bild" >
+	      <img src="cat.jpg" class="img-responsive" alt="Kunde inte hitta bild" >
 	      <div class="carousel-caption">
 	        <h3>Lorem Ipsum</h3>
 	        <p>Bästa måleriet</p>
@@ -142,7 +148,7 @@
 	    </div>
 
 	    <div class="item">
-	      <img src="ships.jpg" alt="kunde inte hitta bild">
+	      <img src="pensel.jpg" class="img-responsive" alt="kunde inte hitta bild">
 	      <div class="carousel-caption">
 	        <h3>Järlåsa</h3>
 	        <p>Nöjda kunder</p>
@@ -150,7 +156,7 @@
 	    </div>
 
 	    <div class="item">
-	      <img src="forest.jpg" alt="kunde inte hitta bild York" style="">
+	      <img src="målare.jpg" alt="kunde inte hitta bild York" class="img-responsive" style="">
 	      <div class="carousel-caption">
 	        <h3>Vi kan måla</h3>
 	        <p>Vi kan måla!</p>
@@ -170,12 +176,12 @@
 	</div>
 
 
-<div id="#omOss">
+<div id="omOss">
 	<div class="row">
-		<div class="col-sm-8">
-			<h1 style="text-align:center;margin:30px 10px 0 10px">Om oss</h1>
+		<div class="col-sm-12">
+			<h1 style="text-align:center;margin:30px 10px">Om oss</h1>
 			<br>
-		<p style="text-align:center;margin:40px">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		<p style="text-align:center;margin:10px 50px">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 			sed do eiusmod tempor incididunt
 			ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			 quis nostrud exercitation ullamco laboris
@@ -185,18 +191,22 @@
 			sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 		</div>
-		<div class="col-sm-4">
+
+
+
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
 
 			<img src="pic.png" class="img-circle" width="150" height="150" style="margin: 40px  30px " alt="">
 
 		</div>
 
-
 	</div>
 
 </div>
 
-<div id="#Services" style="background-color:#f4f4f4">
+<div id="Services" style="background-color:#f4f4f4">
 	<div class="row">
 		<div class="col-sm-4">
 			<h1 style="margin:30px">Tjänster</h1>
