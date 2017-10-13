@@ -220,7 +220,7 @@
 	  </a>
 	</div>
 
-	<div id="navwrap" ><a href="#myCarousel" ><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></a></div>
+	<a href="#myCarousel" style="color:red"><div id="navwrap" ><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></div></a>
 <div id="omOss"></div>
 <br/>
 <div id="omoss1">
