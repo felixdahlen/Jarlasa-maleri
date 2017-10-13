@@ -33,6 +33,7 @@
 		 	height:100px;
 			background-color:#000;
 			text-align: center;
+			
 
 		 }
          #navwrap {
@@ -104,6 +105,9 @@
 		 }
 		 .row{
 		 	margin-right:0;
+		 }
+		 .karta {
+			 
 		 }
 
 		</style>
@@ -280,12 +284,16 @@
 		 <h4>Företagsadress:</h4><a style="font-size:20px"> Järlåsa, långt bort</a>
 
 		</div>
-		<div class="col-sm-6">
-		  <div id="map" style="width:100%;height:400px;background:yellow"></div>
-		</div>
+		<div class="col-sm-6" style="padding:0">
+		  <div id="map" style="width:100%;  height:400px;background:yellow"></div>
+	    </div>
+		
 	</div>
-
+	
 </div>
+
+	
+
 
 
 <footer> &copy 2017</footer>
@@ -312,9 +320,9 @@ $(window).scroll(fixDiv);
 
 function myMap() {
 var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.12),
-    zoom: 10,
-    mapTypeId: google.maps.MapTypeId.HYBRID
+    center: new google.maps.LatLng(59.8861613, 17.1980244),
+    zoom: 13,
+    mapTypeId: google.maps.MapTypeId.roadmap
 }
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
@@ -326,7 +334,7 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-aThnY9ZAzo3J1HY6GhrAMOXSHREqxbY&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUQNgEoJkdZVMp04eNqLCFjdpwQyNjvcY&callback=myMap"></script>
 
 	</body>
 </html>
