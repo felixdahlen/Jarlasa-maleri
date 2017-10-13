@@ -90,6 +90,9 @@
 			 	position: static;
 				margin: 0  0;
 			 }
+			 .col-sm-4 > h1 {
+				 text-align:center;
+			 }
 		 }
 		 .navbar{
 		 	opacity: 0.9;
@@ -105,6 +108,7 @@
 
 
 		 }
+		 
 		 .kuppgift{
 		 	margin:30px 0;
 			color:#000;
@@ -225,9 +229,9 @@
 
 	</div>
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-sm-12" style="text-align:center">
 
-			<img src="pic.png" class="img-circle" width="150" height="150" style="margin: 40px  30px " alt="">
+			<img src="pic.png" class="img-circle" width="150" height="150" style="margin: 40px  30px ; " alt="">
 
 		</div>
 
