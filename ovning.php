@@ -134,6 +134,7 @@
 				<ul class="nav navbar-nav">
 					<li><a class="menyItem" href="#omOss">Om oss</a></li>
 					<li><a class="menyItem" href="#Services">Tjänster</a></li>
+					<li><a class="menyItem" href="Galleri.php">Galleri</a></li>
 					<li><a class="menyItem" href="#Kontakt">Kontakt</a></li>
 				</ul>
 		</div>
@@ -155,7 +156,7 @@
 	  <div class="carousel-inner">
 
 	    <div class="item active">
-	      <img src="cat.jpg" class="img-responsive" alt="Kunde inte hitta bild" >
+	      <img src="burkar.jpg" class="img-responsive" alt="Kunde inte hitta bild" >
 	      <div class="carousel-caption">
 	        <h3>Lorem Ipsum</h3>
 	        <p>Bästa måleriet</p>
@@ -171,7 +172,7 @@
 	    </div>
 
 	    <div class="item">
-	      <img src="målare.jpg" alt="kunde inte hitta bild York" class="img-responsive" style="">
+	      <img src="bild.jpg" alt="kunde inte hitta bild York" class="img-responsive" style="">
 	      <div class="carousel-caption">
 	        <h3>Vi kan måla</h3>
 	        <p>Vi kan måla!</p>
