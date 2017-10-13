@@ -276,7 +276,7 @@
 <div id="Kontakt">
 
 	<div class="row">
-		<div class="col-sm-12 kuppgift">
+		<div class="col-sm-6 kuppgift">
 
 			<h3>Kontaktupgifter</h3>
 		 <br/>
@@ -286,6 +286,9 @@
 		 <br/>
 		 <h4>Företagsadress:</h4><a style="font-size:20px"> Järlåsa, långt bort</a>
 
+		</div>
+		<div class="col-sm-6">
+		  <div id="map" style="width:100%;height:400px;background:yellow"></div>
 		</div>
 	</div>
 
@@ -312,6 +315,17 @@
 $("#navwrap").data("top", $("#navwrap").offset().top);
 $(window).scroll(fixDiv);
 
+//------------------------------------------------------
+
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+
 </script>
 
 
@@ -319,7 +333,7 @@ $(window).scroll(fixDiv);
 
 
 
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-aThnY9ZAzo3J1HY6GhrAMOXSHREqxbY&callback=myMap"></script>
 
 	</body>
 </html>

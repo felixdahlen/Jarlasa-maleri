@@ -100,7 +100,7 @@
 		 .kuppgift{
 		 	margin:30px 0;
 			color:#000;
-			text-align: center;
+			/*text-align: center;*/
 		 }
 		 .row{
 		 	margin-right:0;
@@ -280,7 +280,9 @@
 		 <h4>Företagsadress:</h4><a style="font-size:20px"> Järlåsa, långt bort</a>
 
 		</div>
+		  
 	</div>
+	<div id="map" style="width:400px;height:400px;background:yellow"></div>
 
 </div>
 
