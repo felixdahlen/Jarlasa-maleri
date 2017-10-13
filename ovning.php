@@ -133,7 +133,7 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a class="menyItem" href="#omOss">Om oss</a></li>
-					<li><a class="menyItem" href="#Services">Tjänster</a></li>
+					<li><a class="menyItem" href="#tjanster">Tjänster</a></li>
 					<li><a class="menyItem" href="Galleri.php">Galleri</a></li>
 					<li><a class="menyItem" href="#Kontakt">Kontakt</a></li>
 				</ul>
@@ -172,7 +172,7 @@
 	    </div>
 
 	    <div class="item">
-	      <img src="bild.jpg" alt="kunde inte hitta bild York" class="img-responsive" style="">
+	      <img src="bild.jpg" alt="kunde inte hitta bild " class="img-responsive" style="">
 	      <div class="carousel-caption">
 	        <h3>Vi kan måla</h3>
 	        <p>Vi kan måla!</p>
@@ -192,8 +192,9 @@
 	</div>
 	
 	<div id="navwrap" ><a href="#myCarousel"><i class="fa fa-arrow-up" aria-hidden="true" style="font-size:20px"></i></a></div>
-
-<div id="omOss">
+<div id="omOss"></div>
+<br/>
+<div id="">
 	<div class="row">
 		<div class="col-sm-12">
 			<h1 style="text-align:center;margin:30px 10px">Om oss</h1>
@@ -222,6 +223,8 @@
 	</div>
 
 </div>
+<div id="tjanster"></div>
+<br/>
 
 <div id="Services" style="background-color:#f4f4f4">
 	<div class="row">
