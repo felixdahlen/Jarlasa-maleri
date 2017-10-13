@@ -3,11 +3,13 @@
 	<head>
 		<meta charset="windows-1252">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
 		<title>Test Carousel</title>
 
@@ -33,7 +35,21 @@
 			text-align: center;
 
 		 }
-
+         #navwrap {
+			 width:5%;
+			 margin-left:47.5%;
+			 text-align:center;
+			 display:none;
+			 z-index:1;
+			 background-color:rgba(0,0,0,0.3);
+			 border-radius:5px;
+		 }
+		 #navwrap > a {
+			 text-decoration:none;
+			 width:5%;
+			 margin-left:2%;
+			 margin-right:2%;
+		 }
 
 	   .carousel-inner img {
 
@@ -57,8 +73,7 @@
 
 
 		 }
-
-
+         
 	   @media (max-width: 600px) {
 	     .carousel-caption {
 	       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -174,7 +189,8 @@
 	    <span class="sr-only">Next</span>
 	  </a>
 	</div>
-
+	
+	<div id="navwrap" ><a href="#myCarousel"><i class="fa fa-arrow-up" aria-hidden="true" style="font-size:20px"></i></a></div>
 
 <div id="omOss">
 	<div class="row">
@@ -257,7 +273,7 @@
 		 <br/>
 		 <h4>Telefon:</h4><a style="font-size:20px"> 71231321</a>
 		 <br/>
-		 <h4>Företags adress:</h4><a style="font-size:20px"> Järlåsa, långt bort</a>
+		 <h4>Företagsadress:</h4><a style="font-size:20px"> Järlåsa, långt bort</a>
 
 		</div>
 	</div>
@@ -267,7 +283,25 @@
 
 <footer> &copy 2017</footer>
 
+<script>
+  
+  function fixDiv() {
+    var $div = $("#navwrap");
+    if ($(window).scrollTop() > $div.data("top")) { 
+        $('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'block' }); 
+    }
+    else {
+        $('#navwrap').css({'position': 'static', 'top': 'auto', 'display': 'none'});
+    }
+	if(window.innerWidth < 600) {
+		$('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'none' }); 
+	}
+}
 
+$("#navwrap").data("top", $("#navwrap").offset().top); 
+$(window).scroll(fixDiv);
+
+</script>
 
 
 
