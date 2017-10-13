@@ -36,19 +36,26 @@
 
 		 }
          #navwrap {
-			 width:5%;
-			 margin-left:47.5%;
+			 width:8%;
+			 margin-left:46%;
 			 text-align:center;
 			 display:none;
 			 z-index:1;
 			 background-color:rgba(0,0,0,0.3);
 			 border-radius:5px;
+			 margin-bottom: 20px;
 		 }
 		 #navwrap > a {
 			 text-decoration:none;
 			 width:5%;
 			 margin-left:2%;
 			 margin-right:2%;
+			 color:red;
+
+
+		 }
+		 .fa-angle-up{
+
 		 }
 
 	   .carousel-inner img {
@@ -73,7 +80,7 @@
 
 
 		 }
-         
+
 	   @media (max-width: 600px) {
 	     .carousel-caption {
 	       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -190,8 +197,8 @@
 	    <span class="sr-only">Next</span>
 	  </a>
 	</div>
-	
-	<div id="navwrap" ><a href="#myCarousel"><i class="fa fa-arrow-up" aria-hidden="true" style="font-size:20px"></i></a></div>
+
+	<div id="navwrap" ><a href="#myCarousel"><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></a></div>
 <div id="omOss"></div>
 <br/>
 <div id="">
@@ -288,21 +295,21 @@
 <footer> &copy 2017</footer>
 
 <script>
-  
+
   function fixDiv() {
     var $div = $("#navwrap");
-    if ($(window).scrollTop() > $div.data("top")) { 
-        $('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'block' }); 
+    if ($(window).scrollTop() > $div.data("top") && $(window).scrollTop() > 400) {
+        $('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'block' });
     }
     else {
         $('#navwrap').css({'position': 'static', 'top': 'auto', 'display': 'none'});
     }
 	if(window.innerWidth < 600) {
-		$('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'none' }); 
+		$('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'none' });
 	}
 }
 
-$("#navwrap").data("top", $("#navwrap").offset().top); 
+$("#navwrap").data("top", $("#navwrap").offset().top);
 $(window).scroll(fixDiv);
 
 </script>
