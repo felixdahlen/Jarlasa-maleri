@@ -33,7 +33,7 @@
 		 	height:100px;
 			background-color:#000;
 			text-align: center;
-			
+
 
 		 }
          #navwrap {
@@ -107,15 +107,17 @@
 		 }
 		 .kuppgift{
 		 	margin:30px 0;
+
 			color:#000;
-			text-align: center;
+			text-align: left;
 		 }
 		 .row{
 		 	margin-right:0;
 		 }
 		 .karta {
-			 
+
 		 }
+
 
 		</style>
 
@@ -277,29 +279,31 @@
 
 
 
-<div id="Kontakt">
+<div id="Kontakt" style="margin-top:60px;">
 
 	<div class="row">
 		<div class="col-sm-6 kuppgift">
+<div style="margin-left:50px">
+
 
 			<h3>Kontaktupgifter</h3>
 		 <br/>
-		 <h4>Mail:</h4><a style="font-size:20px">Mail@Järlåsa.se</a>
+		 <h4>Mail:<a style="font-size:20px"> Mail@Järlåsa.se</a></h4>
 		 <br/>
-		 <h4>Telefon:</h4><a style="font-size:20px"> 71231321</a>
+		 <h4>Telefon:<a style="font-size:20px"> 71231321</a></h4>
 		 <br/>
-		 <h4>Företagsadress:</h4><a style="font-size:20px"> Järlåsa, långt bort</a>
-
+		 <h4>Företagsadress:<a style="font-size:20px"> Järlåsa, långt bort</a></h4>
+</div>
 		</div>
 		<div class="col-sm-6" style="padding:0">
 		  <div id="map" style="width:100%;  height:400px;background:yellow"></div>
 	    </div>
-		
+
 	</div>
-	
+
 </div>
 
-	
+
 
 
 
@@ -315,9 +319,9 @@
     else {
         $('#navwrap').css({'position': 'static', 'top': 'auto', 'display': 'none'});
     }
-	if(window.innerWidth < 600) {
-		$('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'none' });
-	}
+//	if(window.innerWidth < 600) {
+	//	$('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'block' });
+//	}
 }
 
 $("#navwrap").data("top", $("#navwrap").offset().top);
