@@ -93,6 +93,7 @@
 			 .col-sm-4 > h1 {
 				 text-align:center;
 			 }
+			 
 		 }
 		 .navbar{
 		 	opacity: 0.9;
@@ -290,7 +291,7 @@
 <div style="margin-left:50px">
 
 
-			<h3>Kontaktupgifter</h3>
+			<h3>Kontaktuppgifter</h3>
 		 <br/>
 		 <h4>Mail:<a style="font-size:20px"> Mail@Järlåsa.se</a></h4>
 		 <br/>
@@ -299,7 +300,7 @@
 		 <h4>Företagsadress:<a style="font-size:20px"> Järlåsa, långt bort</a></h4>
 </div>
 		</div>
-		<div class="col-sm-6" style="padding:0">
+		<div class="col-sm-6" style="padding:0;">
 		  <div id="map" style="width:100%;  height:400px;background:yellow"></div>
 	    </div>
 
@@ -339,12 +340,17 @@ $(window).scroll(fixDiv);
 //-----------------------------------------------------
 
 function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(59.8861613, 17.1980244),
-    zoom: 13,
-    mapTypeId: google.maps.MapTypeId.roadmap
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var mapOptions = {
+        center: new google.maps.LatLng(59.8861613, 17.1980244),
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.roadmap
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(59.8861613, 17.1980244),
+          map: map,
+    });
 }
 
 </script>
