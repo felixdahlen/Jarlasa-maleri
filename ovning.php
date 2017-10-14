@@ -94,6 +94,7 @@
 				 text-align:center;
 			 }
 			 
+			 
 		 }
 		 .navbar{
 		 	opacity: 0.9;
@@ -111,10 +112,13 @@
 		 }
 		 
 		 .kuppgift{
-		 	margin:30px 0;
+		 	/*margin:30 0;*/
 
 			color:#000;
 			text-align: left;
+		 }
+		 .karta {
+			 padding-right:0px;
 		 }
 		 .row{
 		 	margin-right:0;
@@ -300,7 +304,7 @@
 		 <h4>Företagsadress:<a style="font-size:20px"> Järlåsa, långt bort</a></h4>
 </div>
 		</div>
-		<div class="col-sm-6" style="padding:0;">
+		<div class="col-sm-6 karta" style="padding-right:0;">
 		  <div id="map" style="width:100%;  height:400px;background:yellow"></div>
 	    </div>
 
