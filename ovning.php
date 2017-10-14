@@ -132,7 +132,7 @@
 
 	<body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav id="navbar"  class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
 
@@ -208,7 +208,7 @@
 	  </a>
 	</div>
 
-	<div id="navwrap" ><a href="#myCarousel"><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></a></div>
+	<div id="navwrap" ><a id="topLink" href="#myCarousel"><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></a></div>
 <div id="omOss"></div>
 <br/>
 <div id="">
@@ -323,15 +323,20 @@
     else {
         $('#navwrap').css({'position': 'static', 'top': 'auto', 'display': 'none'});
     }
-//	if(window.innerWidth < 600) {
-	//	$('#navwrap').css({'position': 'fixed', 'bottom': '0' , 'display': 'block' });
-//	}
+    if(window.innerWidth < 600) {
+		$('#topLink').prop( 'href', '#navbar' );
+	}
+	else {
+		$('#topLink').prop( 'href', '#myCarousel' );
+	}
 }
 
 $("#navwrap").data("top", $("#navwrap").offset().top);
 $(window).scroll(fixDiv);
 
 //------------------------------------------------------
+
+//-----------------------------------------------------
 
 function myMap() {
 var mapOptions = {
