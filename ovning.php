@@ -81,6 +81,12 @@
 
 
 		 }
+		 #p{
+		 	text-align:center;
+			margin-right:20%;
+			margin-left:20%;
+			margin-top:20px;
+		 }
 
 	   @media (max-width: 600px) {
 	     .carousel-caption {
@@ -93,9 +99,18 @@
 			 .col-sm-4 > h1 {
 				 text-align:center;
 			 }
+<<<<<<< HEAD
 			 
 			 
+=======
+			 #p{
+				 margin-left:10%;
+				 margin-right:10%;
+
+			 }
+>>>>>>> dbfb6f58a8ca1f2597e0bb23d1d6e848d7287966
 		 }
+
 		 .navbar{
 		 	opacity: 0.9;
 			background-color: #00000;
@@ -110,7 +125,7 @@
 
 
 		 }
-		 
+
 		 .kuppgift{
 		 	/*margin:30 0;*/
 
@@ -186,7 +201,7 @@
 	    </div>
 
 	    <div class="item">
-	      <img src="pensel.jpg" class="img-responsive" alt="kunde inte hitta bild">
+	      <img src="bod.jpg" class="img-responsive" alt="kunde inte hitta bild">
 	      <div class="carousel-caption">
 	        <h3>Järlåsa</h3>
 	        <p>Nöjda kunder</p>
@@ -213,15 +228,19 @@
 	  </a>
 	</div>
 
+<<<<<<< HEAD
 	<div id="navwrap" ><a id="topLink" href="#myCarousel"><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></a></div>
+=======
+	<a href="#myCarousel" style="color:red"><div id="navwrap" ><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></div></a>
+>>>>>>> dbfb6f58a8ca1f2597e0bb23d1d6e848d7287966
 <div id="omOss"></div>
 <br/>
-<div id="">
+<div id="omoss1">
 	<div class="row">
 		<div class="col-sm-12">
-			<h1 style="text-align:center;margin:30px 10px">Om oss</h1>
+			<h1 style="text-align:center;color:red;font-weight:800">Om oss</h1>
 			<br>
-		<p style="text-align:center;margin:10px 50px">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		<p id="p" >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 			sed do eiusmod tempor incididunt
 			ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			 quis nostrud exercitation ullamco laboris
@@ -288,7 +307,7 @@
 
 
 
-<div id="Kontakt" style="margin-top:60px;">
+<div id="Kontakt" >
 
 	<div class="row">
 		<div class="col-sm-6 kuppgift">
