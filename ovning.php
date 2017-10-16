@@ -99,16 +99,13 @@
 			 .col-sm-4 > h1 {
 				 text-align:center;
 			 }
-<<<<<<< HEAD
-			 
-			 
-=======
+
 			 #p{
 				 margin-left:10%;
 				 margin-right:10%;
 
 			 }
->>>>>>> dbfb6f58a8ca1f2597e0bb23d1d6e848d7287966
+
 		 }
 
 		 .navbar{
@@ -228,11 +225,11 @@
 	  </a>
 	</div>
 
-<<<<<<< HEAD
+
 	<div id="navwrap" ><a id="topLink" href="#myCarousel"><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></a></div>
-=======
+
 	<a href="#myCarousel" style="color:red"><div id="navwrap" ><i class="fa fa-angle-up" aria-hidden="true" style="font-size:30px"></i></div></a>
->>>>>>> dbfb6f58a8ca1f2597e0bb23d1d6e848d7287966
+
 <div id="omOss"></div>
 <br/>
 <div id="omoss1">
